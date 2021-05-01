@@ -1,0 +1,580 @@
+{
+  "title": "Minimal Emacs key bindings (rev 1)",
+  "maintainers": [
+    "Susumu OTA"
+  ],
+  "rules": [
+    {
+      "description": "For Microsoft Office: C-f to right_arrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-b to left_arrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-n to down_arrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-p to up_arrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-a to home",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "home"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-e to end",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "end"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-v to page_down",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_down"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: M-v to page_up",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_up"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: M-w to copy",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-w to cut",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-y to paste",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-_ to undo",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "international1",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-d to delete_forward",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-h to delete_or_backspace",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-m to return_or_enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift",
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "For Microsoft Office: C-g to escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$",
+                "^com\\.microsoft\\.Powerpoint$",
+                "^com\\.microsoft\\.Word$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
