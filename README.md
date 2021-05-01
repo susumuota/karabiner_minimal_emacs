@@ -1,5 +1,7 @@
 # Minimal Emacs key bindings for Karabiner-Elements
 
+![karabiner-preferences](https://user-images.githubusercontent.com/1632335/116778108-fb2b1900-aaaa-11eb-908d-7e5008cd6319.png)
+
 A minimal Emacs key bindings for [Karabiner-Elements](https://karabiner-elements.pqrs.org/). You can enable/disable each of key bindings so that keep influences minimal to original applications.
 
 This key bindings is based on [Emacs key bindings (rev 12)](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/emacs_key_bindings.json.rb) by [@tekezo](https://github.com/tekezo).
@@ -19,8 +21,6 @@ This key bindings is based on [Emacs key bindings (rev 12)](https://github.com/p
 - Click `Add rule`
 - Expand `Minimal Emacs key bindings`
 - Click `Enable All` or Click `Enable` for specific key bindings
-
-![karabiner-preferences](https://user-images.githubusercontent.com/1632335/116778108-fb2b1900-aaaa-11eb-908d-7e5008cd6319.png)
 
 ## Extend
 
