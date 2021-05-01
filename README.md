@@ -20,6 +20,8 @@ This key bindings is based on [Emacs key bindings (rev 12)](https://github.com/p
 - Expand `Minimal Emacs key bindings`
 - Click `Enable All` or Click `Enable` for specific key bindings
 
+![karabiner-preferences](https://user-images.githubusercontent.com/1632335/116778108-fb2b1900-aaaa-11eb-908d-7e5008cd6319.png)
+
 ## Extend
 
 At the moment this key bindings only apply to Microsoft Excel, PowerPoint and Word. However you can easily extend them by editing `"conditions"` like the following, e.g. `"^com\\.google\\.Chrome$"`. See details [here](https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/conditions/frontmost-application/).
