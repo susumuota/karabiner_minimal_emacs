@@ -13,6 +13,7 @@ This key bindings is based on [Emacs key bindings (rev 12)](https://github.com/p
 ```sh
 % git clone https://github.com/susumuota/karabiner_minimal_emacs
 % cd karabiner_minimal_emacs
+% mkdir -p ~/.config/karabiner/assets/complex_modifications
 % cp -p minimal_emacs.json ~/.config/karabiner/assets/complex_modifications/
 ```
 
